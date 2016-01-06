@@ -1,7 +1,7 @@
 require('capybara/rspec')
 require('./app')
 Capybara.app = Sinatra::Application
-set(:show_expeptions, false)
+set(:show_exceptions, false)
 
 describe('the title case path', {:type => :feature}) do
   it('processes the user entry and returns it to title cased') do
